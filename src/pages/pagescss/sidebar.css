@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Permanent+Marker&display=swap');
+
+
+.layout{
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 20%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.06); 
+    backdrop-filter: blur(15px);           
+    -webkit-backdrop-filter: blur(10px);
+    
+}
+
+.sidebar-top{
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.sidebar-bottom{
+    align-items: center;
+    justify-content: center;
+    /* bottom: 0; */
+    
+}
+
+.items{
+    text-align: start;
+    margin-left: 7%;
+    padding: 13px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.link-item{
+    text-decoration: none;
+    color: #000000;
+}
+.items:hover{
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    border: 1px solid rgb(114, 108, 108);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(130, 121, 121, 0.4);
+}
+
+.link-item.active{
+    transform: scale(1.05);
+    color:blue;
+}
+
+.sidebar-heading{
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 5%;
+    font-family: "Bitcount Prop Single", system-ui;
+}
+
+.content-area{
+    flex: 1;
+    overflow: auto;
+    min-height: 100vh;
+    
+}
+
+

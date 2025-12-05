@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* first */
+.main-home-container {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* background-color: #E6EBE0; */
+  display: flex;
+  height: 100%;
+  width: auto;
+  padding: 50px;
+}
+.text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.text-container h1 {
+  color: #000000;
+  font-size: 5em;
+  font-weight:900;
+  padding: auto;
+}
+.text-container h1 span {
+  color: hsl(263, 84%, 33%);
+}
+.image-container {
+  width: 60vw;
+  margin: 30px 20px;
+  height: auto;
+}
+.text-container p {
+  color: #493e3e;
+  font-size: 1.2em;
+  padding: auto;
+}
+
+.img {
+  width: 100%;
+  height:  100%;
+  transition: transform 0.5s ease;
+}
+.img:hover{
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+/* second */
+
+.second{
+  padding: auto;
+  margin: 10% 0%;
+  height: 100%;
+  width: auto;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container{
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  height: 100%;
+  width: 100%; 
+  flex-wrap: wrap;
+}
+.card{
+  width: 25vw;
+  margin: 10px;
+  transition: 0.5s ease;
+  border: none;
+  background: transparent;
+}
+ .card:hover{
+  transform: scale(1.04);
+  transition: transform 0.5s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease-out;
+  cursor: pointer;
+ }
+.features{
+  height: 100%;
+  width: auto;
+}
+
+.feature-text{
+  justify-content: center;
+  text-align: center;
+  color: #363636;
+  font-size: 4em;
+  line-height: 4rem;
+  font-weight:550;
+  padding: auto;
+  margin: 7%;
+}
+
+.card-title{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-logo{
+  width: 35px;
+  height: 35px;
+  margin:0px 0px 8px 0px ;
+}
+
+/* third */
+:root{
+  --fade:50%;
+}
+.third{
+  margin: 10% 0%;
+  border: none;
+  mask-image: linear-gradient(
+       to right,
+       rgba(0,0,0,0) 7%,
+       rgba(0,0,0,1) calc(var(--fade)),
+       rgba(0,0,0,1) calc(100% - var(--fade)),
+       rgba(0,0,0,0) 93%
+  );
+}
+
+.logo-slider{
+  border: none;
+  width:100%;
+  overflow: hidden;
+  background: transparent;
+  padding: 20px 0;
+  background-color: #ffffff;
+
+}
+
+.logo-track{
+  border: none;
+  display: flex;
+  align-items: center;
+  animation: scroll 10s linear infinite;
+  will-change: transform;
+  gap:7vw
+}
+
+.logo-track .scroll-logo{
+  flex:0 0 auto;
+  height: 150px;
+  width: 120px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.logo-slider:hover .logo-track{
+  animation-play-state:paused;
+}
+
+.logo-slider::before{
+  left:0;
+  background: linear-gradient(to right, #0a0219 0%, rgba(10, 2, 25,0)100%);
+}
+
+@keyframes scroll{
+  0%{transform:translateX(0);}
+  100%{transform: translateX(-100%);}
+}
+
+/* forth */
+
+.forth{
+  margin: 10% 0%;
+}
+
+/* fifth */
+
+:root{
+  --primary:#352E55;
+  --secondary:#B6D8E7;
+}
+
+.fifth{
+  margin: 10% 0%;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.register-text{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 15px;
+    color: #000000;
+    font-weight:450;
+
+}
+.register-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 4%;
+}
+.register-image-container{
+  width: 50vw;
+  height: auto;
+}
+.register-steps{
+  justify-content: center;
+  align-items: center;
+  margin: 0% 4% 0% 0%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Pacifico", cursive;;
+   background: linear-gradient(150deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

@@ -1,0 +1,102 @@
+.site-footer { position: relative;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 5% 0% 5%;
+  margin: 0% 2.5% 0% 2.5%;
+  border-radius: 100px 100px 0px 0px;
+}
+
+/* Left big column */
+.big-products li {
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+.big-products a {
+  text-decoration: none;
+  color: #fff;
+}
+.small-links :hover {
+  text-decoration: underline;
+}
+.large-links :hover {
+  text-decoration: underline;
+}
+
+/* Middle links */
+.large-links li {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+.large-links a {
+  text-decoration: none;
+}
+
+/* Section titles */
+.footer-title {
+  font-size: 14px;
+  color: #bfc4c8;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.small-links li {
+  margin-bottom: 10px;
+}
+.small-links a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Social buttons */
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+.icon-btn:hover {
+  opacity: 0.8;
+  transition: brightness(1) 200ms ease;
+}
+
+/* Floating button */
+/* .floating-action {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  width: 64px;
+  height: 64px;
+  background: #f6b400;
+  border-radius: 50%;
+  border: none;
+  color: black;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+} */
+
+@media (max-width: 767px) {
+  .big-products li {
+    font-size: 28px;
+  }
+  /* .floating-action {
+    width: 56px;
+    height: 56px;
+    right: 14px;
+    bottom: 14px;
+  } */
+}
+/* body {
+  margin: 0;
+  background-color: #000000;
+} */
